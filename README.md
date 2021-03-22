@@ -1,1 +1,1 @@
-# sarnnbf
+# MIMO Self-attentive RNN Beamformer
