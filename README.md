@@ -1,5 +1,5 @@
-# Generalized Spatio-Temporal RNN Beamformer for Target Speech Separation
-Demo for paper "Generalized Spatio-Temporal RNN Beamformer for Target Speech Separation" 
+# MIMO Self-attentive RNN Beamformer for Multi-speaker Speech Separation
+Demo for paper "MIMO Self-attentive RNN Beamformer for Multi-speaker Speech Separation" 
 
 Demo website: https://yongxuustc.github.io/grnnbf/
 
