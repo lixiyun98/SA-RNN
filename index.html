@@ -39,140 +39,140 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
 <p>Conventional MVDR systems can ensure the distortionless of the target speech, while result in high level of residual noise.</p>
 <p>Our proposed <strong>RNN+temporal-spatial SA beamformer systems</strong> can ensure the distortionless of the target speech while also eliminating the residual noise.</p>
     
-<p><strong>Demo 1: Simulated 1-speaker noisy mixture for target speech separation</strong> [Sorry that all the demos are recorded in Mandarin Chinese.]</p>
-<p>
-<img src="1spk/mix.png" width="305" height="125" /> 
-<img src="1spk/ref.png" width="300" height="125" /> 
-<img src="1spk/NNbaseline.png" width="308" height="125" /> 
-<img src="1spk/NN3x3.png" width="305" height="125" /></p>
-<table width="1068" border="1">
-  <tr>
-    <td width="255">Mix (1 speaker + non-stationary additive noise) 
-        <audio
-        controls
-        src="1spk/mix.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-        </audio>
-    </td>
-    <td width="255">Reverberant clean (reference) 
-    <audio
-        controls
-        src="1spk/ref.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>    
-    </td>
-    <td width="255">NN with cRM 
-    <audio
-        controls
-        src="1spk/NNbaseline.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-    </td>
-    <td width="255">NN with cRF 
-    <audio
-        controls
-        src="1spk/NN3x3.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-    </td>
-  </tr>
-</table>
+<!--<p><strong>Demo 1: Simulated 1-speaker noisy mixture for target speech separation</strong> [Sorry that all the demos are recorded in Mandarin Chinese.]</p>-->
+<!--<p>-->
+<!--<img src="1spk/mix.png" width="305" height="125" /> -->
+<!--<img src="1spk/ref.png" width="300" height="125" /> -->
+<!--<img src="1spk/NNbaseline.png" width="308" height="125" /> -->
+<!--<img src="1spk/NN3x3.png" width="305" height="125" /></p>-->
+<!--<table width="1068" border="1">-->
+<!--  <tr>-->
+<!--    <td width="255">Mix (1 speaker + non-stationary additive noise) -->
+<!--        <audio-->
+<!--        controls-->
+<!--        src="1spk/mix.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--        </audio>-->
+<!--    </td>-->
+<!--    <td width="255">Reverberant clean (reference) -->
+<!--    <audio-->
+<!--        controls-->
+<!--        src="1spk/ref.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--    </audio>    -->
+<!--    </td>-->
+<!--    <td width="255">NN with cRM -->
+<!--    <audio-->
+<!--        controls-->
+<!--        src="1spk/NNbaseline.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--    </audio>-->
+<!--    </td>-->
+<!--    <td width="255">NN with cRF -->
+<!--    <audio-->
+<!--        controls-->
+<!--        src="1spk/NN3x3.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--    </audio>-->
+<!--    </td>-->
+<!--  </tr>-->
+<!--</table>-->
 
-<p>
-<img src="1spk/MVDR.png" width="305" height="125" /> 
-<img src="1spk/MVDR3X3.png" width="305" height="125" />
-<img src="1spk/2tapMVDR.png" width="305" height="125" /> 
-<img src="1spk/2tapMVDR3X3.png" width="300" height="125" />
-</p>
-<table width="775" border="1">
-  <tr>
-    <td width="305">MVDR with cRM 
-    <audio
-        controls
-        src="1spk/MVDR.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-    </td>
-    <td width="305">MVDR with cRF  
-    <audio
-        controls
-        src="1spk/MVDR3X3.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-    </td>
-    <td width="275">Multi-tap MVDR with cRM (2-tap: [t-1,t])
-    <audio
-        controls
-        src="1spk/2tapMVDR.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>    
-    </td>
-    <td width="275">Multi-tap MVDR with cRF (2-tap: [t-1,t])
-    <audio
-        controls
-        src="1spk/2tapMVDR3X3.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>    
-    </td>
-  </tr>
-</table>
-<p>
-<img src="1spk/RD-MVDR.png" width="300" height="125" />  
-</p>
-<table width="255" border="1">
-  <tr>
-  <td width="255"><strong>Proposed ADL-MVDR with cRF </strong>
-      <audio
-        controls
-        src="1spk/RD-MVDR.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-  </td>
-  </tr>
-</table>   
+<!--<p>-->
+<!--<img src="1spk/MVDR.png" width="305" height="125" /> -->
+<!--<img src="1spk/MVDR3X3.png" width="305" height="125" />-->
+<!--<img src="1spk/2tapMVDR.png" width="305" height="125" /> -->
+<!--<img src="1spk/2tapMVDR3X3.png" width="300" height="125" />-->
+<!--</p>-->
+<!--<table width="775" border="1">-->
+<!--  <tr>-->
+<!--    <td width="305">MVDR with cRM -->
+<!--    <audio-->
+<!--        controls-->
+<!--        src="1spk/MVDR.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--    </audio>-->
+<!--    </td>-->
+<!--    <td width="305">MVDR with cRF  -->
+<!--    <audio-->
+<!--        controls-->
+<!--        src="1spk/MVDR3X3.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--    </audio>-->
+<!--    </td>-->
+<!--    <td width="275">Multi-tap MVDR with cRM (2-tap: [t-1,t])-->
+<!--    <audio-->
+<!--        controls-->
+<!--        src="1spk/2tapMVDR.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--    </audio>    -->
+<!--    </td>-->
+<!--    <td width="275">Multi-tap MVDR with cRF (2-tap: [t-1,t])-->
+<!--    <audio-->
+<!--        controls-->
+<!--        src="1spk/2tapMVDR3X3.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--    </audio>    -->
+<!--    </td>-->
+<!--  </tr>-->
+<!--</table>-->
+<!--<p>-->
+<!--<img src="1spk/RD-MVDR.png" width="300" height="125" />  -->
+<!--</p>-->
+<!--<table width="255" border="1">-->
+<!--  <tr>-->
+<!--  <td width="255"><strong>Proposed ADL-MVDR with cRF </strong>-->
+<!--      <audio-->
+<!--        controls-->
+<!--        src="1spk/RD-MVDR.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--    </audio>-->
+<!--  </td>-->
+<!--  </tr>-->
+<!--</table>   -->
+<!--    -->
+
+<!--<p>&nbsp;</p>-->
+
     
 
-<p>&nbsp;</p>
-
-    
-
-<p><strong>Demo2: Simulated 2-speaker noisy mixture for target speech separation </strong> <strong>separation</strong></p>
+<p><strong>Demo1: Simulated 2-speaker noisy mixture for target speech separation </strong> <strong>separation</strong></p>
 <p>
-<img src="2spk/mix.png" width="305" height="125" /> 
-<img src="2spk/ref.png" width="300" height="125" /> 
-<img src="2spk/NNbaseline.png" width="308" height="125" /> 
+<img src="2spk/mix/mix.png" width="305" height="125" />
+<img src="2spk/ref/ref1.png" width="300" height="125" />
+<img src="2spk/ref/ref2.png" width="300" height="125" />
 <img src="2spk/NN3x3.png" width="305" height="125" /></p>
 <table width="1068" border="1">
   <tr>
     <td width="255">Mix (2 speakers + non-stationary additive noise) 
         <audio
         controls
-        src="2spk/mix.wav">
+        src="2spk/mix/mix.wav">
             Your browser does not support the
             <code>audio</code> element.
         </audio>
     </td>
-    <td width="255">Reverberant clean (reference) 
+    <td width="255">Reverberant clean For speaker1 (reference)
     <audio
         controls
-        src="2spk/ref.wav">
+        src="2spk/ref/ref1.wav">
             Your browser does not support the
             <code>audio</code> element.
     </audio>    
     </td>
-    <td width="255">NN with cRM 
+      <td width="255">Reverberant clean For speaker2 (reference)
     <audio
         controls
-        src="2spk/NNbaseline.wav">
+        src="2spk/ref/ref2.wav">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
