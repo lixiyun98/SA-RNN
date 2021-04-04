@@ -160,7 +160,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
         </audio>
     </td>
-    <td width="305">Reverberant clean For speaker1 (reference)
+    <td width="305">Reverberant clean of speaker1 (reference)
     <audio
         controls
         src="2spk/ref/ref1.wav">
@@ -168,7 +168,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
     </audio>    
     </td>
-      <td width="305">Reverberant clean For speaker2 (reference)
+      <td width="305">Reverberant clean of speaker2 (reference)
     <audio
         controls
         src="2spk/ref/ref2.wav">
@@ -186,7 +186,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
 </p>
 <table width="915" border="1">
   <tr>
-    <td width="305">MIMO MVDR For speaker1
+    <td width="305">MIMO MVDR for speaker1
     <audio
         controls
         src="2spk/enh/mvdr.wav">
@@ -194,7 +194,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
     </audio>
     </td>
-    <td width="305">MIMO MVDR For speaker2
+    <td width="305">MIMO MVDR for speaker2
     <audio
         controls
         src="2spk/enh/mvdr-2.wav">
@@ -202,7 +202,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
     </audio>
     </td>
-    <td width="305">MIMO TasNet For speaker1
+    <td width="305">MIMO TasNet for speaker1
     <audio
         controls
         src="2spk/enh/tasnet.wav">
@@ -220,7 +220,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
 </p>
 <table width="915" border="1">
   <tr>
-  <td width="305">MIMO TasNet For speaker2
+  <td width="305">MIMO TasNet for speaker2
     <audio
         controls
         src="2spk/enh/tasnet-2.wav">
@@ -228,7 +228,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
     </audio>
     </td>
-      <td width="305">MIMO Generalized RNN(GRNN) beamformer For speaker1
+      <td width="305">MIMO Generalized RNN(GRNN) beamformer for speaker1
     <audio
         controls
         src="2spk/enh/grnn.wav">
@@ -236,7 +236,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
     </audio>
     </td>
-      <td width="305">MIMO Generalized RNN(GRNN) beamformer For speaker2
+      <td width="305">MIMO Generalized RNN(GRNN) beamformer for speaker2
     <audio
         controls
         src="2spk/enh/grnn-2.wav">
@@ -252,7 +252,8 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
 </p>
 <table width="610" border="1">
   <tr>
-      <td width="305">MIMO RNN+temporal-spatial SA beamformer For speaker1
+      <td width="305"><strong>MIMO RNN+temporal-spatial SA beamformer for speaker1
+          </strong>
     <audio
         controls
         src="2spk/enh/temporal spatial sa-rnn.wav">
@@ -260,8 +261,9 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
     </audio>
     </td>
-      <td width="305">MIMO Generalized RNN(GRNN) beamformer For speaker2
-    <audio
+      <td width="305"><strong>MIMO RNN+temporal-spatial SA beamformer for speaker2
+    </strong>
+          <audio
         controls
         src="2spk/enh/temporal spatial sa-rnn2.wav">
             Your browser does not support the
@@ -276,13 +278,13 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
     
 <p><strong>Demo 3: Simulated 3-speaker noisy mixture for target speech separation (waveforms aligned with the spectrograms shown in Fig. 2 of the paper)</strong></p>
 <p>
-<img src="3spk/mix.png" width="305" height="125" /> 
-<img src="3spk/ref.png" width="300" height="125" /> 
-<img src="3spk/NNbaseline.png" width="308" height="125" /> 
-<img src="3spk/NN3x3.png" width="305" height="125" /></p>
-<table width="1068" border="1">
+<img src="3spk/mix/mix.png" width="305" height="125" />
+<img src="3spk/ref/ref.png" width="305" height="125" />
+<img src="3spk/ref/ref2.png" width="305" height="125" />
+</p>
+<table width="915" border="1">
   <tr>
-    <td width="255">Mix (3 speakers + non-stationary additive noise) 
+    <td width="305">Mix (3 speakers + non-stationary additive noise)
         <audio
         controls
         src="3spk/mix.wav">
@@ -290,7 +292,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
         </audio>
     </td>
-    <td width="255">Reverberant clean (reference) 
+    <td width="305">Reverberant clean (reference) of speaker1
     <audio
         controls
         src="3spk/ref.wav">
@@ -298,18 +300,10 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
     </audio>    
     </td>
-    <td width="255">NN with cRM 
+    <td width="305">Reverberant clean (reference) of speaker2
     <audio
         controls
-        src="3spk/NNbaseline.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-    </td>
-    <td width="255">NN with cRF 
-    <audio
-        controls
-        src="3spk/NN3x3.wav">
+        src="3spk/ref2.wav">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
@@ -318,62 +312,152 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
 </table>
 
 <p>
-<img src="3spk/MVDR.png" width="305" height="125" /> 
-<img src="3spk/MVDR3X3.png" width="305" height="125" />
-<img src="3spk/2tapMVDR.png" width="305" height="125" /> 
-<img src="3spk/2tapMVDR3X3.png" width="300" height="125" />
+<img src="3spk/ref/ref3.png" width="305" height="125" />
+<img src="3spk/enh/mvdr.png" width="305" height="125" />
+<img src="3spk/enh/mvdr-2.png" width="305" height="125" />
 </p>
-<table width="775" border="1">
+<table width="915" border="1">
   <tr>
-    <td width="305">MVDR with cRM 
+    <td width="305">Reverberant clean (reference) of speaker3
     <audio
         controls
-        src="3spk/MVDR.wav">
+        src="3spk/ref/ref3.wav">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
     </td>
-    <td width="305">MVDR with cRF  
+    <td width="305">MIMO MVDR for speaker1
     <audio
         controls
-        src="3spk/MVDR3X3.wav">
+        src="3spk/enh/mvdr.wav">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
     </td>
-    <td width="275">Multi-tap MVDR with cRM (2-tap: [t-1,t])
+    <td width="305">MIMO MVDR for speaker2
     <audio
         controls
-        src="3spk/2tapMVDR.wav">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>    
-    </td>
-    <td width="275">Multi-tap MVDR with cRF (2-tap: [t-1,t])
-    <audio
-        controls
-        src="3spk/2tapMVDR3X3.wav">
+        src="3spk/enh/mvdr-2.wav">
             Your browser does not support the
             <code>audio</code> element.
     </audio>    
     </td>
   </tr>
 </table>
+
 <p>
-<img src="3spk/RD-MVDR.png" width="300" height="125" />    
+<img src="3spk/enh/mvdr-3.png" width="305" height="125" />
+    <img src="3spk/enh/tasnet.png" width="305" height="125" />
+<img src="3spk/enh/tasnet-2.png" width="305" height="125" />
 </p>
-<table width="255" border="1">
+<table width="915" border="1">
   <tr>
-  <td width="255"><strong>Proposed ADL-MVDR with cRF </strong>
+  <td width="305"><strong>MIMO MVDR for speaker3 </strong>
       <audio
         controls
-        src="3spk/RD-MVDR.wav">
+        src="3spk/enh/mvdr-3.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  </td>
+      <td width="305"><strong>MIMO Conv-TasNet for speaker1 </strong>
+      <audio
+        controls
+        src="3spk/enh/tasnet.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  </td>
+      <td width="305"><strong>MIMO Conv-TasNet for speaker2 </strong>
+      <audio
+        controls
+        src="3spk/enh/tasnet-2.wav">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
   </td>
   </tr>
-</table>   
+</table>
+<p>
+<img src="3spk/enh/tasnet-3.png" width="305" height="125" />
+    <img src="3spk/enh/grnn.png" width="305" height="125" />
+<img src="3spk/enh/grnn-2.png" width="305" height="125" />
+</p>
+<table width="915" border="1">
+  <tr>
+  <td width="305"><strong>MIMO Conv-TasNet for speaker3 </strong>
+      <audio
+        controls
+        src="3spk/enh/tasnet-3.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  </td>
+      <td width="305"><strong>MIMO Generalized RNN for speaker1 </strong>
+      <audio
+        controls
+        src="3spk/enh/grnn.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  </td>
+      <td width="305"><strong>MIMO Generalized RNN for speaker2 </strong>
+      <audio
+        controls
+        src="3spk/enh/grnn-2.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  </td>
+  </tr>
+</table>
+<p>
+<img src="3spk/enh/grnn-3.png" width="305" height="125" />
+    <img src="3spk/enh/sarnn.png" width="305" height="125" />
+<img src="3spk/enh/sarnn-2.png" width="305" height="125" />
+</p>
+<table width="915" border="1">
+  <tr>
+  <td width="305"><strong>MIMO Generalized RNN for speaker3 </strong>
+      <audio
+        controls
+        src="3spk/enh/grnn-3.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  </td>
+      <td width="305"><strong>MIMO Self-attentive RNN for speaker1 </strong>
+      <audio
+        controls
+        src="3spk/enh/sarnn.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  </td>
+      <td width="305"><strong>MIMO Self-attentive RNN for speaker2 </strong>
+      <audio
+        controls
+        src="3spk/enh/sarnn-2.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  </td>
+  </tr>
+</table>
+<p><img src="3spk/enh/sarnn-3.png" width="305" height="125" /></p>
+<table width="915" border="1">
+    <tr>
+        <td width="305">
+            <strong>MIMO Self-attentive RNN for speaker3 </strong>
+            <audio
+        controls
+        src="3spk/enh/sarnn-3.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+            </audio>
+        </td>
+    </tr>
+</table>
 <p>&nbsp;</p>
 
 
