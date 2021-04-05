@@ -17,16 +17,16 @@
 <p><img src="system_overview.png" width="900"/></p>
 <p> Purely neural network based speech separation systems often cause nonlinear distortion on the separated speech, which is harmful for many automatic speech recognition (ASR) systems [1]. 
 The minimum variance distortionless response (MVDR) beamformer can be used to minimize the distortion, yet conventional MVDR approaches still result in high level of residual noise [2,3].
-    In this study, we propose a self-attentive RNN (denoted as SA-RNN) beamformer framework to further improve our previous RNN-based beamformer by leveraging on the powerful modeling capability of self-attention.
+    In this study, we propose a self-attentive RNN (denoted as SA-RNN) beamformer framework to further improve our previous RNN-based beamformer [7,8] by leveraging on the powerful modeling capability of self-attention.
     Temporal-spatial self-attention module is proposed to better learn the beamforming weights from the speech and noise spatial covariance matrices.
     Our model can greatly remove the residual noise while ensuring the distortionless of the target speech. Our system outperforms prior arts in many objective evaluation metrics as well as the ASR accuracy. </p>
 
-<p> A Mandarin audio-visual dataset [4,5] is adopted for this study, the word error rate (WER) is measured with a Tencent commercial mandarin speech recognition API [6].</p>  
+<p> A Mandarin audio-visual dataset [3,4,6,7,8] is adopted for this study, the word error rate (WER) is measured with a Tencent commercial mandarin speech recognition API [9].</p>
     
 <p><strong> Systems evaluated: </strong></p>
-<p>1. MIMO Conv-TasNet with STFT: A Conv-TasNet variant [4,5]</p>
+<p>1. MIMO Conv-TasNet with STFT: A Conv-TasNet variant [5,6]</p>
 <p>2. MIMO MVDR: An MVDR system [3]</p>
-<p>3. MIMO Generalized RNN(GRNN) beamformer</p>
+<p>3. MIMO Generalized RNN(GRNN) beamformer [8]</p>
 <p>4. Proposed MIMO RNN+temporal SA beamformer</p>
 <p>5. Proposed MIMO RNN+spatial SA beamformer</p>
 <p>6. Proposed MIMO temporal-spatial SA beamformer</p>
@@ -35,8 +35,8 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
 <p>&nbsp;</p>
 
 <p><strong>Wearing a headphone is strongly recommended.</strong></p>
-<p>Purely NN systems can greatly remove the residual noise, but cause nonlinear distortion (e.g., blackhole on spectrogram).</p>
-<p>Conventional MVDR systems can ensure the distortionless of the target speech, while result in high level of residual noise.</p>
+<p>Purely NN systems [4,5,6] can greatly remove the residual noise, but cause nonlinear distortion (e.g., blackhole on spectrogram).</p>
+<p>Conventional MVDR systems [2,3] can ensure the distortionless of the target speech, while result in high level of residual noise.</p>
 <p>Our proposed <strong>RNN+temporal-spatial SA beamformer systems</strong> can ensure the distortionless of the target speech while also eliminating the residual noise.</p>
     
 <!--<p><strong>Demo 1: Simulated 1-speaker noisy mixture for target speech separation</strong> [Sorry that all the demos are recorded in Mandarin Chinese.]</p>-->
@@ -492,29 +492,27 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
   <p><strong>Demo 4: Real-world far-field recording and testing 2:</strong></p>
 <p>
   <video src="video/real_world_demo2_mixture.mp4" width="340" height="273" controls preload></video>
-  <video src="video/real_world_demo2_MVDR_enh.mp4" width="340" height="273" controls preload></video>
-<video src="video/real_world_demo2_MVDR_enh-2.mp4" width="340" height="273" controls preload></video>
-    <video src="video/real_world_demo2_grnn_enh.mp4" width="340" height="273" controls preload></video>
-    <video src="video/real_world_demo2_grnn_enh-2.mp4" width="340" height="273" controls preload></video>
-    <video src="video/real_world_demo2_sarnn_enh.mp4" width="340" height="273" controls preload></video>
-    <video src="video/real_world_demo2_sarnn_enh-2.mp4" width="340" height="273" controls preload></video>
+  <video src="video/mvdrdemo2-1.mp4" width="340" height="273" controls preload></video>
+<video src="video/mvdrdemo2-2.mp4" width="340" height="273" controls preload></video>
+    <video src="video/tasnetdemo2-1.mp4" width="340" height="273" controls preload></video>
+    <video src="video/tasnetdemo2-2.mp4" width="340" height="273" controls preload></video>
+    <video src="video/sarnndemo2-1.mp4" width="340" height="273" controls preload></video>
+    <video src="video/sarnndemo2-2.mp4" width="340" height="273" controls preload></video>
 </p>
-<table width="700" border="1">
+<table width="1020" border="1">
   <tr>
     <td width="340">Real-world scenario: far-field <strong>two-speaker mixture</strong> recorded by the camera and microphone array</td>
-    <td width="345">Real-world scenario: <strong>separated male voice</strong> by our previously reported MIMO MVDR method [3] (high level of residual nois,face detected in the red rectangle, used for DOA estimation)</td>
+    <td width="340">Real-world scenario: <strong>separated male voice</strong> by our previously reported MIMO MVDR method [3]</td>
+             <td width="340">Real-world scenario: <strong>separated female voice</strong> by our previously reported MIMO MVDR method [3] </td>
       </tr>
     <tr>
-        <td width="345">Real-world scenario: <strong>separated female voice</strong> by our previously reported MIMO MVDR method [3] </td>
-        <td width="345">Real-world scenario: <strong>separated male voice</strong> by our previously reported GRNN method [3] </td>
+        <td width="340">Real-world scenario: <strong>separated male voice</strong> by our previously reported MIMO Conv-TasNet method [3] </td>
+             <td width="340">Real-world scenario: <strong>separated female voice</strong> by our previously reported TasNet method [3] </td>
+      <td width="340">Real-world scenario: <strong>separated male voice</strong> by the <strong>proposed SA-RNN method</strong> </td>
     </tr>
-     <tr>
-         <td width="345">Real-world scenario: <strong>separated female voice</strong> by our previously reported GRNN method [3] </td>
-      <td width="345">Real-world scenario: <strong>separated male voice</strong> by the <strong>proposed SA-RNN method</strong> </td>
-  </tr>
     <tr>
-              <td width="345">Real-world scenario: <strong>separated female voice</strong> by the <strong>proposed SA-RNN method</strong> </td>
-    </tr>
+         <td width="340">Real-world scenario: <strong>separated female voice</strong> by the <strong>proposed SA-RNN method</strong> </td>
+  </tr>
 </table>
     
 <p>&nbsp;</p>
