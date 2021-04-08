@@ -18,6 +18,7 @@
 <p><img src="attention_module_overview.png" width="900"/></p>
 <p> Purely neural network based speech separation systems often cause nonlinear distortion on the separated speech, which is harmful for many automatic speech recognition (ASR) systems [1]. 
 The minimum variance distortionless response (MVDR) beamformer can be used to minimize the distortion, yet conventional MVDR approaches still result in high level of residual noise [2,3].
+    Recently, our proposed recurrent neural network (RNN) based all deep learning minimum variance distortionless response (ADL-MVDR) beamformer [7] method yielded superior performance over the conventional MVDR [2,3] by replacing the matrix inversion and eigenvalue decomposition with two RNNs.
     In this study, we propose a self-attentive RNN (denoted as SA-RNN) beamformer framework to further improve our previous RNN-based beamformer [7,8] by leveraging on the powerful modeling capability of self-attention.
     Temporal-spatial self-attention module is proposed to better learn the beamforming weights from the speech and noise spatial covariance matrices.
     Our model can greatly remove the residual noise while ensuring the distortionless of the target speech. Our system outperforms prior arts in many objective evaluation metrics as well as the ASR accuracy. </p>
