@@ -185,6 +185,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
 <img src="2spk/enh/mvdr-1.png" width="305" height="125" />
 <img src="2spk/enh/mvdr-2.png" width="305" height="125" />
 <img src="2spk/enh/tasnet-1.png" width="305" height="125" />
+    <img src="2spk/enh/tasnet-2.png" width="305" height="125" />
 </p>
 <table width="915" border="1">
   <tr>
@@ -212,17 +213,7 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
     </audio>    
     </td>
-  </tr>
-</table>
-
-<p>
-<img src="2spk/enh/tasnet-2.png" width="305" height="125" />
-    <img src="2spk/enh/grnn.png" width="305" height="125" />
-<img src="2spk/enh/grnn-2.png" width="305" height="125" />
-</p>
-<table width="915" border="1">
-  <tr>
-  <td width="305">MIMO Conv-TasNet for speaker2
+      <td width="305">MIMO Conv-TasNet for speaker2
     <audio
         controls
         src="2spk/enh/tasnet-2.wav">
@@ -230,6 +221,17 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
     </audio>
     </td>
+  </tr>
+</table>
+<p>
+    <img src="2spk/enh/grnn.png" width="305" height="125" />
+<img src="2spk/enh/grnn-2.png" width="305" height="125" />
+    <img src="2spk/enh/sarnn.png" width="305" height="125" />
+<img src="2spk/enh/sarnn-2.png" width="305" height="125" />
+</p>
+<table width="915" border="1">
+  <tr>
+
       <td width="305">MIMO Generalized RNN beamformer for speaker1
     <audio
         controls
@@ -246,14 +248,6 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
             <code>audio</code> element.
     </audio>
     </td>
-  </tr>
-</table>
-<p>
-<img src="2spk/enh/sarnn.png" width="305" height="125" />
-<img src="2spk/enh/sarnn-2.png" width="305" height="125" />
-</p>
-<table width="610" border="1">
-  <tr>
       <td width="305"><strong>MIMO RNN+temporal-spatial SA beamformer for speaker1
           </strong>
     <audio
@@ -274,6 +268,32 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
     </td>
   </tr>
 </table>
+<!--<p>-->
+<!--<img src="2spk/enh/sarnn.png" width="305" height="125" />-->
+<!--<img src="2spk/enh/sarnn-2.png" width="305" height="125" />-->
+<!--</p>-->
+<!--<table width="610" border="1">-->
+<!--  <tr>-->
+<!--      <td width="305"><strong>MIMO RNN+temporal-spatial SA beamformer for speaker1-->
+<!--          </strong>-->
+<!--    <audio-->
+<!--        controls-->
+<!--        src="2spk/enh/temporal spatial sa-rnn.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--    </audio>-->
+<!--    </td>-->
+<!--      <td width="305"><strong>MIMO RNN+temporal-spatial SA beamformer for speaker2-->
+<!--    </strong>-->
+<!--          <audio-->
+<!--        controls-->
+<!--        src="2spk/enh/temporal spatial sa-rnn2.wav">-->
+<!--            Your browser does not support the-->
+<!--            <code>audio</code> element.-->
+<!--    </audio>-->
+<!--    </td>-->
+<!--  </tr>-->
+<!--</table>-->
 <p>&nbsp;</p>
 
     
@@ -483,22 +503,24 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
     <video src="video/convdemo11-1.mp4" width="340" height="273" controls preload></video>
     <video src="video/convdemo11-2.mp4" width="340" height="273" controls preload></video>
     <video src="video/grnndemo1-1.mp4" width="340" height="273" controls preload></video>
+    <video src="video/grnndemo1-2.mp4" width="340" height="273" controls preload></video>
 </p>
 <table width="1020" border="1">
   <tr>
       <td width="340">Real-world scenario: <strong>separated male voice</strong> by our previously reported MIMO Conv-TasNet method [5,6] </td>
              <td width="340">Real-world scenario: <strong>separated female voice</strong> by our previously reported MIMO Conv-TasNet method [5,6] </td>
         <td width="340">Real-world scenario: <strong>separated male voice</strong> by our previously reported MIMO GRNN method [8] </td>
+      <td width="340">Real-world scenario: <strong>separated female voice</strong> by our previously reported MIMO GRNN method [8] </td>
   </tr>
 </table>
 <p>
-    <video src="video/grnndemo1-2.mp4" width="340" height="273" controls preload></video>
+
     <video src="video/sarnn11.mp4" width="340" height="273" controls preload></video>
     <video src="video/sarnn22.mp4" width="340" height="273" controls preload></video>
 </p>
 <table width="1020" border="1">
     <tr>
-        <td width="340">Real-world scenario: <strong>separated female voice</strong> by our previously reported MIMO GRNN method [8] </td>
+
         <td width="340">Real-world scenario: <strong>separated male voice</strong> by the <strong>proposed SA-RNN method</strong> </td>
          <td width="340">Real-world scenario: <strong>separated female voice</strong> by the <strong>proposed SA-RNN method</strong> </td>
   </tr>
@@ -520,21 +542,23 @@ The minimum variance distortionless response (MVDR) beamformer can be used to mi
     <video src="video/convdemo22-1.mp4" width="340" height="273" controls preload></video>
     <video src="video/convdemo22-2.mp4" width="340" height="273" controls preload></video>
     <video src="video/grnndemo2-1.mp4" width="340" height="273" controls preload></video>
+    <video src="video/grnndemo2-2.mp4" width="340" height="273" controls preload></video>
 </p>
 <table width="1020" border="1">
   <tr>
     <td width="340">Real-world scenario: <strong>separated male voice</strong> by our previously reported MIMO Conv-TasNet method [5,6] </td>
       <td width="340">Real-world scenario: <strong>separated female voice</strong> by our previously reported MIMO Conv-TasNet method [5,6] </td>
       <td width="340">Real-world scenario: <strong>separated male voice</strong> by our previously reported MIMO GRNN method [8] </td>
+        <td width="340">Real-world scenario: <strong>separated female voice</strong> by our previously reported MIMO GRNN method [8] </td>
   </tr></table>
 <p>
-    <video src="video/grnndemo2-2.mp4" width="340" height="273" controls preload></video>
+
     <video src="video/sarnndemo2-1.mp4" width="340" height="273" controls preload></video>
     <video src="video/sarnndemo2-2.mp4" width="340" height="273" controls preload></video>
 </p>
 <table width="1020" border="1">
     <tr>
-        <td width="340">Real-world scenario: <strong>separated female voice</strong> by our previously reported MIMO GRNN method [8] </td>
+
         <td width="340">Real-world scenario: <strong>separated male voice</strong> by the <strong>proposed SA-RNN method</strong> </td>
          <td width="340">Real-world scenario: <strong>separated female voice</strong> by the <strong>proposed SA-RNN method</strong> </td>
   </tr>
